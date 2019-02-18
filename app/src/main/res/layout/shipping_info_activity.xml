@@ -13,9 +13,12 @@
          app:contentPadding="16dp">-->
 
     <LinearLayout
+        android:id="@+id/parent_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clipToPadding="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:orientation="vertical">
 
         <android.support.design.widget.AppBarLayout
@@ -28,10 +31,10 @@
                 style="@style/Widget.Shrine.Toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:paddingStart="12dp"
-                android:paddingLeft="12dp"
-                android:paddingEnd="12dp"
-                android:paddingRight="12dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
                 app:contentInsetStart="0dp"
                 app:navigationIcon="@drawable/shr_branded_menu"
                 app:title="@string/app_name" />
@@ -48,45 +51,44 @@
                 android:id="@+id/spinner1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/spinner_border"
                 android:entries="@array/test"
-                android:focusable="true"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp" />
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
 
 
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/spinner_border"
                 android:entries="@array/test"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp" />
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
 
 
             <Spinner
                 android:id="@+id/spinner3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/spinner_border"
                 android:entries="@array/test"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp" />
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
 
 
             <Spinner
                 android:id="@+id/spinner4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/spinner_border"
                 android:entries="@array/test"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp" />
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/name_text_input"
@@ -140,8 +142,8 @@
                 android:layout_marginTop="3dp"
                 android:background="@drawable/spinner_border"
                 android:entries="@array/test"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp" />
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
 
             <android.support.design.widget.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
